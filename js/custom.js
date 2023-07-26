@@ -59,8 +59,19 @@
           $(".carousel.carousel-slider").carousel({
               fullWidth: true,
               indicators: true,
-          });
               
+          });
+          //
+
+        //   $('a[data-slide="prev"]').click(function() {
+        //     $('#myCarousel').carousel('prev');
+        //   });
+          
+        //   $('a[data-slide="next"]').click(function() {
+        //     $('#myCarousel').carousel('next');
+        //   });
+
+
               // RESUME CARDS ANIMATION
               if ($(window).width() > 800) {
                     $(".resume-list-item, .resume-card").on("click", function() {

@@ -143,10 +143,16 @@ jQuery("input.dark_switch").bind("click", function() {
 		jQuery("body").removeClass('dark');
 		jQuery("body").addClass('dark');
 		createCookie("is_dark", 'true', 365);
+		jQuery('.main-picture.men').css('background-image', 'url("../images/projects/my Logo.jpg")');
+
 	} else {
 		jQuery("body").removeClass('dark');
 		createCookie("is_dark", '', -1);
 		jQuery('body').removeClass('transparent');
+		
+		// Change the background image of the element with class "main-picture men"
+		jQuery('.main-picture.men').css('background-image', 'url("../images/projects/my Logo white.jpg")');
+	
 	}
 });
 

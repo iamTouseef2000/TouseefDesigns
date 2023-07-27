@@ -144,6 +144,8 @@ jQuery("input.dark_switch").bind("click", function() {
 		jQuery("body").addClass('dark');
 		createCookie("is_dark", 'true', 365);
 		jQuery('.main-picture.men').css('background-image', 'url("../images/projects/my Logo.jpg")');
+		jQuery('.profile-picture.show-on-medium-and-down').css('background-image', 'url("../images/projects/my Logo.jpg")');
+jQuery('boxed_switch').hide();
 
 	} else {
 		jQuery("body").removeClass('dark');
@@ -152,6 +154,7 @@ jQuery("input.dark_switch").bind("click", function() {
 		
 		// Change the background image of the element with class "main-picture men"
 		jQuery('.main-picture.men').css('background-image', 'url("../images/projects/my Logo white.jpg")');
+		jQuery('.profile-picture.show-on-medium-and-down').css('background-image', 'url("../images/projects/my Logo white.jpg")');
 	
 	}
 });
